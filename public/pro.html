@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <meta name="description" content="digital products platform">
+    
+    <!-- 2. Security-Related Meta Tags and Headers -->
+    <meta name="google-site-verification" content="HwIAF5dALFfHbJaNc_TQkv8F7gc79PlbVv-EYx6uPRI" />
+
+
+    <link rel="stylesheet" href="styles/pro.css">
+</head>
+<body>
+    <div class="div1">
+        <a href="../index.html">Go Back</a>
+    </div>
+    <div id="profile">
+        <div id="profileInfo">
+            <h2>Account Details</h2>
+            <div>Email: <span id="email"></span></div>
+            <div>User Name: <span id="userName"></span></div>
+
+
+
+            <div class="contact-links">
+                <a href="https://t.me/voyllar" target="_blank" class="contact-card telegram-card">
+                    <div class="icon-container">
+                        <i class="fab fa-telegram-plane"></i>
+                    </div>
+                    <div class="text-container">
+                        <h4>Telegram</h4>
+                        <p>Chat with us on Telegram</p>
+                    </div>
+                </a>
+                <a href="https://wa.me/213672637809" target="_blank" class="contact-card whatsapp-card">
+                    <div class="icon-container">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="text-container">
+                        <h4>WhatsApp</h4>
+                        <p>Contact us on WhatsApp</p>
+                    </div>
+                </a>
+            </div>
+
+
+
+
+
+
+            <div>
+                <a href="#" id="forgotPassword"><h3>Change my password</h3></a>
+                <button id="signOutBtn" class="btn">Sign Out</button>
+            </div>
+        </div>
+        <div id="myPurchases">
+            <h2>My Purchases</h2>
+            <!-- Add content related to user's purchases here -->
+
+            <div class="order-container">
+                <h1>Your Orders</h1>
+                <div id="orders"></div>
+              </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-auth-compat.js"></script>
+    <script type="module" src="scripts/pro.js"></script>
+
+
+
+
+</body>
+</html>
+
+
+

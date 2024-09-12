@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../storage2"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "milange"
+	}
+}

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Store</title>
+
+    <meta name="google-site-verification" content="HwIAF5dALFfHbJaNc_TQkv8F7gc79PlbVv-EYx6uPRI" />
+    
+
+    <!-- Firebase App (the core Firebase SDK) -->
+
+
+<link rel="stylesheet" href="public/styles/style01.css">
+
+</head>
+<body>
+
+  
+    <header class="main-header">
+        <div class="logo-section">
+            <img src="images/Screenshot 2024-03-16 135332.png" alt="Logo" class="logo">
+        </div>
+       
+          
+
+
+
+
+        
+
+
+        <div class="searchBox">
+            <input class="searchInput" type="text" name="search" placeholder="Search something" id="searchInput">
+            <button class="searchButton" id="searchButton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                    <g clip-path="url(#clip0_2_17)">
+                        <g filter="url(#filter0_d_2_17)">
+                            <path d="M23.7953 23.9182L19.0585 19.1814M19.0585 19.1814C19.8188 18.4211 20.4219 17.5185 20.8333 16.5251C21.2448 15.5318 21.4566 14.4671 21.4566 13.3919C21.4566 12.3167 21.2448 11.252 20.8333 10.2587C20.4219 9.2653 19.8188 8.36271 19.0585 7.60242C18.2982 6.84214 17.3956 6.23905 16.4022 5.82759C15.4089 5.41612 14.3442 5.20435 13.269 5.20435C12.1938 5.20435 11.1291 5.41612 10.1358 5.82759C9.1424 6.23905 8.23981 6.84214 7.47953 7.60242C5.94407 9.13789 5.08145 11.2204 5.08145 13.3919C5.08145 15.5634 5.94407 17.6459 7.47953 19.1814C9.01499 20.7168 11.0975 21.5794 13.269 21.5794C15.4405 21.5794 17.523 20.7168 19.0585 19.1814Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" shape-rendering="crispEdges"></path>
+                        </g>
+                    </g>
+                    <defs>
+                        <filter id="filter0_d_2_17" x="-0.418549" y="3.70435" width="29.7139" height="29.7139" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                            <feOffset dy="4"></feOffset>
+                            <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                            <feComposite in2="hardAlpha" operator="out"></feComposite>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_17"></feBlend>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_17" result="shape"></feBlend>
+                        </filter>
+                        <clipPath id="clip0_2_17">
+                            <rect width="28.0702" height="28.0702" fill="white" transform="translate(0.403503 0.526367)"></rect>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </button>
+            <ul class="searchSuggestions" id="searchSuggestions"></ul>
+        </div>
+        
+
+
+        
+
+
+
+
+        <div class="contact-links1">
+            <a href="https://t.me/voyllar" target="_blank" class="contact-card telegram-card">
+                <div class="icon-container">
+                    <i class="fab fa-telegram-plane"></i>
+                </div>
+                <div class="text-container">
+                    <h4>Telegram</h4>
+                    <p>Chat with us on Telegram</p>
+                </div>
+            </a>
+            <a href="https://wa.me/213672637809" target="_blank" class="contact-card whatsapp-card">
+                <div class="icon-container">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="text-container">
+                    <h4>WhatsApp</h4>
+                    <p>Contact us on WhatsApp</p>
+                </div>
+            </a>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="auth-controls">
+            <div id="profileCircle" class="profile-circle" style="display: none;">
+                <a href="pro.html"></a>
+            </div>
+
+
+
+
+
+          
+
+
+
+
+        <button class="styled-button" id="signbtn" onclick="window.location.href='sign.html';">
+            Sign in/ Sign up
+            <div class="inner-button">
+              <svg
+                id="Arrow"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+                height="30px"
+                width="30px"
+                class="icon"
+              >
+                <defs>
+                  <linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="iconGradient">
+                    <stop style="stop-color:#FFFFFF;stop-opacity:1" offset="0%"></stop>
+                    <stop style="stop-color:#AAAAAA;stop-opacity:1" offset="100%"></stop>
+                  </linearGradient>
+                </defs>
+                <path
+                  fill="url(#iconGradient)"
+                  d="M4 15a1 1 0 0 0 1 1h19.586l-4.292 4.292a1 1 0 0 0 1.414 1.414l6-6a.99.99 0 0 0 .292-.702V15c0-.13-.026-.26-.078-.382a.99.99 0 0 0-.216-.324l-6-6a1 1 0 0 0-1.414 1.414L24.586 14H5a1 1 0 0 0-1 1z"
+                ></path>
+              </svg>
+            </div>
+          </button>
+          
+
+
+
+        </div>
+    </header>
+
+
+
+
+  <!-- Mobile search container -->
+  <div class="searchbx">
+    <div class="searchBox">
+        <input class="searchInput phoneSearchInput" type="text" placeholder="Search something">
+        <button aria-label="Search" class="searchButton" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+               
+              
+<g clip-path="url(#clip0_2_17)">
+<g filter="url(#filter0_d_2_17)">
+  <path d="M23.7953 23.9182L19.0585 19.1814M19.0585 19.1814C19.8188 18.4211 20.4219 17.5185 20.8333 16.5251C21.2448 15.5318 21.4566 14.4671 21.4566 13.3919C21.4566 12.3167 21.2448 11.252 20.8333 10.2587C20.4219 9.2653 19.8188 8.36271 19.0585 7.60242C18.2982 6.84214 17.3956 6.23905 16.4022 5.82759C15.4089 5.41612 14.3442 5.20435 13.269 5.20435C12.1938 5.20435 11.1291 5.41612 10.1358 5.82759C9.1424 6.23905 8.23981 6.84214 7.47953 7.60242C5.94407 9.13789 5.08145 11.2204 5.08145 13.3919C5.08145 15.5634 5.94407 17.6459 7.47953 19.1814C9.01499 20.7168 11.0975 21.5794 13.269 21.5794C15.4405 21.5794 17.523 20.7168 19.0585 19.1814Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" shape-rendering="crispEdges"></path>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_2_17" x="-0.418549" y="3.70435" width="29.7139" height="29.7139" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+  <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+  <feOffset dy="4"></feOffset>
+  <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+  <feComposite in2="hardAlpha" operator="out"></feComposite>
+  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_17"></feBlend>
+  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_17" result="shape"></feBlend>
+</filter>
+<clipPath id="clip0_2_17">
+  <rect width="28.0702" height="28.0702" fill="white" transform="translate(0.403503 0.526367)"></rect>
+</clipPath>
+</defs>
+</svg>
+                 
+
+        </button>
+
+
+        <ul class="searchSuggestions phoneSearchSuggestions"></ul>
+    </div>
+</div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <div class="category-bar">
+        <div class="category"><a class="a2" href="#game">Items</a></div>
+        <div class="category"><a class="a2" href="#foot1">Payment Method</a></div>
+
+        <div class="category"><a class="a2" href="#how">Procedure</a></div>
+
+
+    </div>
+  
+
+  
+<div class="bigc">
+
+
+    <div class="product-container">
+        <!-- Product items -->
+        <div class="product">
+            <img class="productimg" src="images/discord-3d-icon-free-png.webp" alt="" onclick="window.location.href='discord.html'">
+        </div>
+        <div class="product">
+            <img class="productimg" src="images/Spotify_logo_vertical_black.jpg" alt="" onclick="window.location.href='spotify.html'">
+        </div>
+        <div class="product">
+            <img class="productimg" src="images/5.jpg" alt="" onclick="window.location.href='prime.html'">
+        </div>
+        <div class="product">
+           <img class="productimg" src="images/4.jpeg" alt="" onclick="window.location.href='disney.html'">
+        </div>
+        
+        <div class="product">
+            <img class="productimg" src="images/7.png" alt="" onclick="window.location.href='crunsh.html'">
+        </div>
+
+        <div class="product">
+            <img class="productimg" src="images/com.netflix.mediaclient.jpg" alt="" onclick="window.location.href='netflix.html'">
+        </div>
+        
+    </div>
+</div>
+  
+    <div class="hot-games-section" id="game">
+        <h1 class="section-title1">Your gateway to premium digital downloads and streaming services</h1>
+        <h2 class="section-title" id="trend">TRENDING ITEMS</h2>
+        <div class="product-items">
+  
+            
+            
+      <div class="product-card">
+                <a href="netflix.html"><img src="images/com.netflix.mediaclient.jpg" alt="Netflix Premium" class="product-image" /></a>
+            </div>     
+            
+            
+
+      <div class="product-card">
+                <a href="spotify.html"><img src="images/Spotify_logo_vertical_black.jpg" alt="Netflix Premium" class="product-image" /></a>
+            </div>   
+            
+            
+
+      <div class="product-card">
+                <a href="discord.html"><img src="images/3.jpg" alt="Netflix Premium" class="product-image" /></a>
+            </div>  
+            
+            
+
+      <div class="product-card">
+                <a href="prime.html"><img src="images/5.jpg" alt="Netflix Premium" class="product-image" /></a>
+            </div>  
+            
+            
+      <div class="product-card">
+                <a href="disney.html"><img src="images/4.jpeg" alt="Netflix Premium" class="product-image" /></a>
+            </div> 
+            
+            
+      <div class="product-card">
+                <a href="crunsh.html"><img src="images/7.png" alt="Netflix Premium" class="product-image" /></a>
+            </div>      
+            
+               
+            
+
+
+
+            
+           
+            
+        </div>
+    </div>
+  
+    <div class="line" id="how"></div>
+  
+    <section class="howitworks" >
+        <div class="registration" id="works">
+            <div class="icons-section">
+                <img class="icon-image" src="images/images reg.png" alt="">
+            </div>
+            <div class="write-section "  >
+                <h1>registration</h1>
+                <h4>Register for free </h4>
+            </div>
+        </div>
+        <div class="registration " >
+            <div class="icons-section" id="">
+                <img class="icon-image" src="images/images  payy.png" alt="">
+            </div>
+            <div class="write-section" id="foot1">
+                <h1>payment</h1>
+                <h4>Checkout with your preferred method</h4>
+            </div>
+        </div>
+        <div class="registration">
+            <div class="icons-section">
+                <img class="icon-image" src="images/delivery-icon-transparent-background-shipping-cost-ico-11562852302e3mtlf1bfz.png" alt="">
+            </div>
+            <div class="write-section">
+                <h1>delivery</h1>
+                <h4>Delivery in few seconds</h4>
+            </div>
+        </div>
+        <div class="registration" id="works3">
+            <div class="icons-section">
+                <img class="icon-image" src="images/images warranty.png" alt="">
+            </div>
+            <div class="write-section" id="foot">
+                <h1>warranty</h1>
+                <h4 >100% warranty for the whole subscription period</h4>
+            </div >
+        </div>
+    </section>
+  
+    <div id="productContainer1"></div>
+  
+    <div class="line" ></div>
+
+    <div class="paym" >
+
+        <div class="paym1 pm1"><img class="img1" src="images/visa.png" alt=""></div>
+        <div class="paym1 pm2"><img class="img1" src="images/Cryptocurrency-Tether-Usdt-Logo-Graphics-13393983-1.jpg" alt=""></div>
+        <div class="paym1 pm3"><img class="img1" src="images/binance pay.png" alt=""></div>
+        <div class="paym1 pm4"><img class="img1" src="images/Bitcoin-Logo.png " alt=""></div>
+
+    </div>
+
+    <div class="line"></div>
+  
+    <footer class="main-footer" >
+        <div class="footer-content">
+            <p>&copy; 2024 VOYLLAR.COM. All rights reserved.</p>
+            
+        </div>
+
+        
+        <div class="contact-links">
+            <a href="https://t.me/voyllar" target="_blank" class="contact-card telegram-card">
+                <div class="icon-container">
+                    <i class="fab fa-telegram-plane"></i>
+                </div>
+                <div class="text-container">
+                    <h4>Telegram</h4>
+                    <p>Chat with us on Telegram</p>
+                </div>
+            </a>
+            <a href="https://wa.me/213672637809" target="_blank" class="contact-card whatsapp-card">
+                <div class="icon-container">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="text-container">
+                    <h4>WhatsApp</h4>
+                    <p>Contact us on WhatsApp</p>
+                </div>
+            </a>
+        </div>
+        
+    </footer>
+
+
+    <script type="module" src="scripts/script01.js"></script>
+
+
+</body>
+</html>

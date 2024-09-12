@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../big finale one"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "milange"
+	}
+}
